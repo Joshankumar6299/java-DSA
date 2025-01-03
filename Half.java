@@ -9,13 +9,29 @@ public class Half {
         // ****
 
         int n = 4;
-        for(int i=1; i<=n; i++) {
-            for(int j=1; j<=i; j++) {
-                    System.out.print("*");
+        // for(int i=1; i<=n; i++) {
+        //     for(int j=1; j<=i; j++) {
+        //             System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }
+
+        // Q5 Inverted Half Pyramid
+        //    *
+        //   **
+        //  ***
+        // ****
+         
+        for(int i=1; i<=n;i++){
+            for(int j=1; j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=1; j<=i;j++){
+                System.out.print("*");
             }
             System.out.println();
         }
- 
+
     }
     
 }
